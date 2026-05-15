@@ -1,0 +1,124 @@
+/* GENERAL STYLE */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1E3A8A;
+    color: #e3f2fd;
+    text-align: center;
+}
+
+/* NAVBAR (FLEXBOX) */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ddbc00;
+    padding: 15px;
+}
+
+.logo {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+ul {
+    list-style-type: square;
+    display: inline-block;
+    text-align: left;
+}
+
+.nav-links a:hover {
+    color: rgb(255, 255, 255);
+}
+
+/* CONTENT */
+.container {
+    padding: 20px;
+    text-align: center;
+}
+
+/* IMAGE */
+.profile-img {
+    width: 300px;
+    border-radius: 50%;
+    margin: 10px 0;
+}
+
+/* FORM */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+    text-align: left;
+}
+
+input, textarea {
+    margin: 10px 0;
+    padding: 10px;
+}
+
+button {
+    padding: 10px;
+    background-color: #FACC15;
+    color: rgb(0, 0, 0);
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1565c0;
+}
+
+h1 {
+    color: #FACC15;
+}
+h2 {
+    color: #FACC15;
+}
+
+/* ✅ MEDIA QUERY (Requirement #3) */
+/* HAMBURGER BUTTON */
+.menu-toggle {
+    display: none;
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+}
+
+/* MOBILE STYLE */
+@media (max-width: 600px) {
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #0d47a1;
+        text-align: center;
+    }
+
+    .nav-links a {
+        padding: 10px;
+        display: block;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+}
